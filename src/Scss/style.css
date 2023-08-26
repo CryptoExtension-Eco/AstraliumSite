@@ -10,8 +10,81 @@ ul {
 a {
   text-decoration: none; }
 
+/*Color*/
+/*Responsive*/
 /*Pages*/
 /*Pages Widget*/
 /*Pages Widget Navbar*/
+/*Color*/
+/*Responsive*/
+.navigations {
+  position: absolute;
+  bottom: 0;
+  background-color: #0973A1;
+  width: 100%;
+  height: 50px; }
+  .navigations ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .navigations ul li {
+      margin-right: 50px; }
+      .navigations ul li:last-child {
+        margin-right: 0; }
+      .navigations ul li a {
+        color: white;
+        padding: 10px; }
+
+/*Responsive*/
+/*Color*/
+/*Responsive*/
+@media screen and (min-width: 320px) {
+  /*Color*/
+  /*Responsive*/
+  .navigations {
+    position: absolute;
+    bottom: 0;
+    background-color: #0973A1;
+    width: 100%;
+    height: 50px; }
+    .navigations ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .navigations ul li {
+        margin-right: 50px; }
+        .navigations ul li:last-child {
+          margin-right: 0; }
+        .navigations ul li a {
+          color: white;
+          padding: 10px; } }
+@media screen and (min-width: 480px) {
+  .paintauchoco {
+    color: blue; } }
+@media screen and (min-width: 768px) {
+  .paintauchoco {
+    color: orange; } }
+@media screen and (min-width: 1024px) {
+  .paintauchoco {
+    color: green; } }
+@media screen and (min-width: 1280px) {
+  .paintauchoco {
+    color: burlywood; } }
+@media screen and (min-width: 1440px) {
+  .paintauchoco {
+    color: tomato; } }
+@media screen and (min-width: 1680px) {
+  .paintauchoco {
+    color: aqua; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+@import '../Base/Variables.scss';
+@import '../Base/Mixins.scss';
+
+@media screen and (min-width: $mobile-small) {
+    @import "../Pages/Widget/Navbar/NavbarMobile.scss";
+}
+
+
+@media screen and (min-width: $mobile-medium) {
+    .paintauchoco{
+        color: blue;
+    }
+}
+
+@media screen and (min-width: $mobile-large) {
+    .paintauchoco{
+        color: orange;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .paintauchoco{
+        color: green;
+    }
+}
+
+@media screen and (min-width: $desktop-small) {
+    .paintauchoco{
+        color: burlywood;
+    }
+}
+
+@media screen and (min-width: $desktop-medium) {
+    .paintauchoco{
+        color: tomato;
+    }
+}
+
+@media screen and (min-width: $desktop-large) {
+    .paintauchoco{
+        color: aqua;
+    }
+}
