@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const NavbarMobile = () => {
   return (
     <div>
-        <h1>NavbarMobile</h1>
+      <h1>NavbarMobile</h1>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarMobile
+export default NavbarMobile;
