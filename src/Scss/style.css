@@ -40,7 +40,12 @@ a {
         color: white;
         padding: 10px; }
         .navigations ul li a .navigation__logoFontAwesome {
-          color: red; }
+          color: red;
+          transition: 0.3s;
+          display: inline-block; }
+          .navigations ul li a .navigation__logoFontAwesome:hover {
+            transform: translateY(-35px);
+            color: black; }
 
 /*Responsive*/
 /*Color*/
@@ -71,7 +76,15 @@ a {
           color: white;
           padding: 10px; }
           .navigations ul li a .navigation__logoFontAwesome {
-            color: red; } }
+            color: red;
+            transition: 0.3s;
+            display: inline-block; }
+            .navigations ul li a .navigation__logoFontAwesome:hover {
+              transform: translateY(-35px);
+              color: black; }
+
+  .paintauchoco {
+    color: limegreen; } }
 @media screen and (min-width: 480px) {
   .paintauchoco {
     color: blue; } }

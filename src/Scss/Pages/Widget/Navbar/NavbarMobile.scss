@@ -32,6 +32,13 @@
 
         .navigation__logoFontAwesome{
           color: red;
+          transition: 0.3s;
+          display: inline-block;
+
+          &:hover{
+            transform: translateY(-35px);
+            color: black;
+          }
         }
       }
     }
