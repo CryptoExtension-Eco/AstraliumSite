@@ -1,9 +1,9 @@
 import React from 'react';
-
+import '../Scss/Pages/HomePages.scss';
 const HomePage = () => {
   return (
     <div>
-      <h1>HomePages</h1>
+      <h1 className='paintauchoco'>HomePages</h1>
     </div>
   );
 };

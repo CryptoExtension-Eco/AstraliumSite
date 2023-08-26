@@ -1,0 +1,17 @@
+/*Base*/
+@import "./Base//Reset.scss";
+@import "./Base//Variables.scss";
+@import "./Base//Mixins.scss";
+
+/*Pages*/
+@import './Pages/HomePages.scss';
+@import './Pages/About.scss';
+@import './Pages/Contact.scss';
+
+/*Pages Widget*/
+@import './Pages/Widget/Footer.scss';
+
+/*Pages Widget Navbar*/
+@import './Pages/Widget/Navbar/NavbarDesktop.scss';
+@import './Pages/Widget/Navbar/NavbarMobile.scss';
+
