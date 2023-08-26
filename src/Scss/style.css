@@ -39,6 +39,8 @@ a {
       .navigations ul li a {
         color: white;
         padding: 10px; }
+        .navigations ul li a .navigation__logoFontAwesome {
+          color: red; }
 
 /*Responsive*/
 /*Color*/
@@ -67,7 +69,9 @@ a {
           margin-right: 0; }
         .navigations ul li a {
           color: white;
-          padding: 10px; } }
+          padding: 10px; }
+          .navigations ul li a .navigation__logoFontAwesome {
+            color: red; } }
 @media screen and (min-width: 480px) {
   .paintauchoco {
     color: blue; } }
