@@ -1,46 +1,122 @@
-// NavbarMobile.scss
-@import '../../../Base/Variables.scss';
-@import '../../../Base/Mixins.scss';
+@import "../../../Base/Variables.scss";
 
-.navigations {
+.navigation {
   position: absolute;
   bottom: 0;
-  background-color: $FirstColor;
   width: 100%;
-  height: 50px;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    li {
-      margin-right: 50px; 
-      
-      &:last-child {
-        margin-right: 0;
-      }
-      
-      a {
-        color: white; 
-        padding: 10px; 
+    width: auto; // Ajustez la largeur en fonction du nombre d'éléments
+  }
 
-        .navigation__logoFontAwesome{
-          color: red;
-          transition: 0.3s;
-          display: inline-block;
+  ul li {
+    position: relative;
+    list-style: none;
+    width: 70px; // Ajustez la largeur en fonction du nombre d'éléments
+    height: 70px;
+    margin-right: 20px;
+    z-index: 1;
 
-          &:hover{
-            transform: translateY(-35px);
-            color: black;
-          }
+    a {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+
+      .icon {
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: 0.5s;
+        color: $FirstColor;
+        
+        &:hover {
+          color: lighten($FirstColor, 10%);
         }
       }
+
+      &:hover {
+        .icon {
+          transform: translateY(-35px);
+          font-size: 1.8em;
+        }
+
+        .text {
+          opacity: 1;
+          transform: translateY(10px);
+        }
+      }
+
+      .text {
+        position: absolute;
+        color: $FirstColor;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+      }
     }
+  }
+
+  .indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px; // Ajustez la largeur en fonction du nombre d'éléments
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    border: 6px solid $FirstColor;
+    transition: 0.5s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -22px;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 1px -10px 0 0 $FirstColor;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -22px;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-left-radius: 20px;
+      box-shadow: -1px -10px 0 0 $FirstColor;
+    }
+  }
+
+  ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(70px * 0)); // Ajustez la valeur en fonction du nombre d'éléments
+  }
+  ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(70px * 1.27)); // Ajustez la valeur en fonction du nombre d'éléments
+  }
+  ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(70px * 2.56)); // Ajustez la valeur en fonction du nombre d'éléments
+  }
+  ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(70px * 3.85)); // Ajustez la valeur en fonction du nombre d'éléments
   }
 }
