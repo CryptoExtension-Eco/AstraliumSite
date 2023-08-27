@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Scss/Pages/HomePages.scss';
-import TextImg from './img/TextImg.png';
+import TextImg from './img/TextImg3.png';
 const HomePage = () => {
   return (
     <>

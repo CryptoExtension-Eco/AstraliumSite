@@ -28,7 +28,8 @@ a {
   align-items: center;
   justify-content: space-between;
   /* Ajout de cette ligne */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4635DC; }
   .navbar-container .logo {
     height: 50px;
     display: flex;
@@ -155,7 +156,8 @@ a {
     align-items: center;
     justify-content: space-between;
     /* Ajout de cette ligne */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #4635DC; }
     .navbar-container .logo {
       height: 50px;
       display: flex;
