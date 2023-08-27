@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import PropTypes from 'prop-types';
+import { translate } from '../../TranslateService';
 
-const NavbarMobile = () => {
+const NavbarMobile = ({ language, onLanguageChange }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleItemClick = (index) => {
@@ -11,19 +13,23 @@ const NavbarMobile = () => {
   };
 
   const navigationItems = [
-    { icon: faHome, text: 'Home' },
-    { icon: faUser, text: 'About' },
-    { icon: faEnvelope, text: 'Contact' },
-    { icon: faGoogle, text: 'CryptoExtension' },
+    { icon: faHome, key: 'home' },
+    { icon: faUser, key: 'about' },
+    { icon: faEnvelope, key: 'contact' },
+    { icon: faGoogle, key: 'cryptoExtension' },
   ];
 
   return (
     <div className="navbar-container">
       <h1 className="logo">Astralium</h1>
       <div className="lang">
-        <button className="lang-button">FR</button>
+        <button className="lang-button" onClick={() => onLanguageChange('fr')}>
+          FR
+        </button>
         <span className="lang-divider">|</span>
-        <button className="lang-button">EN</button>
+        <button className="lang-button" onClick={() => onLanguageChange('en')}>
+          EN
+        </button>
       </div>
       <div className="navigation">
         <ul>
@@ -35,19 +41,19 @@ const NavbarMobile = () => {
             >
               <a
                 href={
-                  item.text === 'CryptoExtension'
+                  item.key === 'cryptoExtension'
                     ? 'https://cryptoextension.fr/'
                     : '#'
                 }
-                target={item.text === 'CryptoExtension' ? '_blank' : ''}
+                target={item.key === 'cryptoExtension' ? '_blank' : ''}
                 rel={
-                  item.text === 'CryptoExtension' ? 'noopener noreferrer' : ''
+                  item.key === 'cryptoExtension' ? 'noopener noreferrer' : ''
                 }
               >
                 <span className="icon">
                   <FontAwesomeIcon icon={item.icon} />
                 </span>
-                <span className="text">{item.text}</span>
+                <span className="text">{translate(item.key, language)}</span>
               </a>
             </li>
           ))}
@@ -56,6 +62,11 @@ const NavbarMobile = () => {
       </div>
     </div>
   );
+};
+
+NavbarMobile.propTypes = {
+  language: PropTypes.string.isRequired,
+  onLanguageChange: PropTypes.func.isRequired,
 };
 
 export default NavbarMobile;
