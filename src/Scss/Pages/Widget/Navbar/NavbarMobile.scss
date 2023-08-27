@@ -1,122 +1,127 @@
 @import "../../../Base/Variables.scss";
 
 .navigation {
-  position: absolute;
+	position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 70px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  ul {
-    display: flex;
-    width: auto; // Ajustez la largeur en fonction du nombre d'éléments
-  }
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  z-index: 1000;
+	ul {
+		display: flex;
+		width: auto;
+		li {
+			position: relative;
+			list-style: none;
+      margin: 10px;
+      width: 70px;
+			height: 70px;
+			z-index: 1;
+			a {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+				text-align: center;
+				font-weight: 500;
 
-  ul li {
-    position: relative;
-    list-style: none;
-    width: 70px; // Ajustez la largeur en fonction du nombre d'éléments
-    height: 70px;
-    margin-right: 20px;
-    z-index: 1;
-
-    a {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      font-weight: 500;
-
-      .icon {
-        position: relative;
-        display: block;
-        line-height: 75px;
-        font-size: 1.5em;
-        text-align: center;
-        transition: 0.5s;
-        color: $FirstColor;
-        
-        &:hover {
-          color: lighten($FirstColor, 10%);
-        }
-      }
-
-      &:hover {
-        .icon {
-          transform: translateY(-35px);
-          font-size: 1.8em;
-        }
-
-        .text {
-          opacity: 1;
-          transform: translateY(10px);
-        }
-      }
-
-      .text {
-        position: absolute;
-        color: $FirstColor;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 400;
-        letter-spacing: 0.05em;
-        transition: 0.5s;
-        opacity: 0;
-        transform: translateY(20px);
-      }
-    }
-  }
-
-  .indicator {
-    position: absolute;
-    top: -50%;
-    width: 70px; // Ajustez la largeur en fonction du nombre d'éléments
-    height: 70px;
-    background: white;
-    border-radius: 50%;
-    border: 6px solid $FirstColor;
-    transition: 0.5s;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -22px;
-      width: 20px;
-      height: 20px;
-      background: transparent;
-      border-top-right-radius: 20px;
-      box-shadow: 1px -10px 0 0 $FirstColor;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: -22px;
-      width: 20px;
-      height: 20px;
-      background: transparent;
-      border-top-left-radius: 20px;
-      box-shadow: -1px -10px 0 0 $FirstColor;
-    }
-  }
-
-  ul li:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(70px * 0)); // Ajustez la valeur en fonction du nombre d'éléments
-  }
-  ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(70px * 1.27)); // Ajustez la valeur en fonction du nombre d'éléments
-  }
-  ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(70px * 2.56)); // Ajustez la valeur en fonction du nombre d'éléments
-  }
-  ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(70px * 3.85)); // Ajustez la valeur en fonction du nombre d'éléments
-  }
+				.icon {
+					position: relative;
+					display: block;
+          top: -5px;
+					line-height: 75px;
+					font-size: 28px;
+					text-align: center;
+					transition: 0.5s;
+					color: $FirstColor;
+				}
+				.text {
+					position: absolute;
+					color: $FirstColor;
+					font-weight: 400;
+					font-size: 1em;
+					letter-spacing: 0.05em;
+					transition: 0.5s;
+					opacity: 0;
+					transform: translateY(20px);
+				}
+			}
+			&:nth-child(1).active {
+				~ {
+					.indicator {
+						transform: translateX(calc(70px * 0.15));
+					}
+				}
+			}
+			&:nth-child(2).active {
+				~ {
+					.indicator {
+						transform: translateX(calc(70px * 1.43));
+					}
+				}
+			}
+			&:nth-child(3).active {
+				~ {
+					.indicator {
+						transform: translateX(calc(70px * 2.72));
+					}
+				}
+			}
+			&:nth-child(4).active {
+				~ {
+					.indicator {
+						transform: translateX(calc(70px * 3.99));
+					}
+				}
+			}
+		}
+		li.active {
+			a {
+				.icon {
+					transform: translateY(-32px);
+				}
+				.text {
+					opacity: 1;
+					transform: translateY(10px);
+				}
+			}
+		}
+	}
+}
+.indicator {
+	position: absolute;
+	top: -50%;
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	border: 6px solid $FirstColor;
+	transition: 0.5s;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -22px;
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		border-top-right-radius: 20px;
+		box-shadow: 1px -10px 0 0 $FirstColor;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -22px;
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		border-top-left-radius: 20px;
+		box-shadow: -1px -10px 0 0 $FirstColor;
+	}
 }
