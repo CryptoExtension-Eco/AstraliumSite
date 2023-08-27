@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar language={language} onLanguageChange={handleLanguageChange} />
       <Home language={language} onLanguageChange={handleLanguageChange} />
-      <About />
+      <About  language={language}/>
       <Contact />
       <Footer />
     </>

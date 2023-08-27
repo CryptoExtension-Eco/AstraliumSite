@@ -37,8 +37,40 @@
           }
         }
       } 
-
-      .About, .Contact{
+      .About {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-left: 55px;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+      
+        .card {
+          background-color: white;
+          width: 250px;
+          height: 300px;
+          border-radius: 19px;
+    
+          .title{
+            margin: 10px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 25px;
+          }
+          .list{
+            margin-left: 25px;
+            ul{
+                list-style-type: circle;
+                li{
+                    margin: 15px;
+                }
+            }
+          }
+        }
+      }
+      
+       .Contact{
         height: 100vh;
       }
 }
@@ -47,6 +79,10 @@
 @media screen and (min-width: $mobile-medium) {
     .paintauchoco{
         color: blue;
+    }
+    .About{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -79,6 +115,11 @@
           margin-left: 20px;
         }
       }
+    }
+
+    .About{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   

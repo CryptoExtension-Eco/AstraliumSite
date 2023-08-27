@@ -20,6 +20,8 @@ a {
 /*Color*/
 /*Responsive*/
 /*Pages*/
+/*Color*/
+/*Responsive*/
 /*Pages Widget*/
 /*Pages Widget Navbar*/
 /*Color*/
@@ -63,7 +65,8 @@ a {
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000; }
   .navigation ul {
     display: flex;
     width: auto; }
@@ -188,7 +191,8 @@ a {
     background: #fff;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    z-index: 1000; }
     .navigation ul {
       display: flex;
       width: auto; }
@@ -296,11 +300,42 @@ a {
         max-width: 50%;
         margin-top: -50px; }
 
-  .About, .Contact {
+  .About {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-left: 55px;
+    justify-content: center;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement */ }
+    .About .card {
+      background-color: white;
+      width: 250px;
+      height: 300px;
+      border-radius: 19px; }
+      .About .card .title {
+        margin: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 25px; }
+      .About .card .list {
+        margin-left: 25px; }
+        .About .card .list ul {
+          list-style-type: circle; }
+          .About .card .list ul li {
+            margin: 15px; }
+
+  .Contact {
     height: 100vh; } }
 @media screen and (min-width: 480px) {
   .paintauchoco {
-    color: blue; } }
+    color: blue; }
+
+  .About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 @media screen and (min-width: 768px) {
   .home {
     display: flex;
@@ -327,7 +362,11 @@ a {
       .home .left img {
         max-width: 30%;
         /* Utilisez la largeur complète du .left */
-        margin-left: 20px; } }
+        margin-left: 20px; }
+
+  .About {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
 @media screen and (min-width: 1024px) {
   .paintauchoco {
     color: green; } }

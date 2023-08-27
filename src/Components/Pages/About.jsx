@@ -1,23 +1,58 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { translate } from '../TranslateService'; // Importer la fonction translate
 
-const About = () => {
+const TechnologyCard = ({ title, items, language }) => {
   return (
-    <div className="About">
-      <h1>About</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam blanditiis
-        facilis impedit repellendus cum voluptatibus perspiciatis et earum,
-        repellat dolore natus laboriosam ratione ad. Minima odit doloremque eum
-        commodi dolor. Tempora obcaecati, voluptatibus delectus a reiciendis eos
-        placeat laboriosam non similique ex sint nesciunt minus ipsum? Expedita,
-        praesentium aspernatur magnam qui deleniti saepe aut nam accusamus
-        obcaecati, est repellendus. Inventore! Alias nulla praesentium vero
-        deserunt id iste quasi? Voluptate illum quisquam quo reiciendis
-        distinctio quibusdam sapiente in voluptas. Non molestias accusantium
-        iusto sunt velit veniam aperiam, eos magni deleniti ab?
-      </p>
+    <div className="card">
+      <div className="title">
+        {/* Utiliser translate(title, language) pour traduire le titre */}
+        <p>{translate(title, language)}</p>
+      </div>
+      <div className="list">
+        <ul>
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
+};
+
+TechnologyCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  language: PropTypes.string.isRequired,
+};
+
+const About = ({ language }) => {
+  const technologies = [
+    {
+      title: 'CryptoExtension',
+      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+    },
+    {
+      title: 'Ethereum',
+      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+    },
+    {
+      title: 'Solidity',
+      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+    },
+  ];
+
+  return (
+    <div className="About">
+      {technologies.map((technology, index) => (
+        <TechnologyCard key={index} title={technology.title} items={technology.items.map(item => translate(item, language))} language={language} />
+      ))}
+    </div>
+  );
+};
+
+About.propTypes = {
+  language: PropTypes.string.isRequired,
 };
 
 export default About;
