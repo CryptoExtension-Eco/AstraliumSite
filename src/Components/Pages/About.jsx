@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from '../TranslateService'; // Importer la fonction translate
+import { translate } from '../TranslateService';
 
 const TechnologyCard = ({ title, items, language }) => {
   return (
     <div className="card">
       <div className="title">
-        {/* Utiliser translate(title, language) pour traduire le titre */}
         <p>{translate(title, language)}</p>
       </div>
       <div className="list">
@@ -30,22 +29,27 @@ const About = ({ language }) => {
   const technologies = [
     {
       title: 'CryptoExtension',
-      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+      items: ['first', 'second', 'tird'],
     },
     {
       title: 'Ethereum',
-      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+      items: ['first', 'second', 'tird'],
     },
     {
       title: 'Solidity',
-      items: ['first', 'second', 'tird'], // Utiliser les clés de traduction
+      items: ['first', 'second', 'tird'],
     },
   ];
 
   return (
     <div className="About">
       {technologies.map((technology, index) => (
-        <TechnologyCard key={index} title={technology.title} items={technology.items.map(item => translate(item, language))} language={language} />
+        <TechnologyCard
+          key={index}
+          title={technology.title}
+          items={technology.items.map((item) => translate(item, language))}
+          language={language}
+        />
       ))}
     </div>
   );
