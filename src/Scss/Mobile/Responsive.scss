@@ -5,7 +5,7 @@
     @import "../Pages/Widget/Navbar/NavbarMobile.scss";
     .home {
         height: 90vh;
-        background-color: #4635DC;
+        background-color: $SecondColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
