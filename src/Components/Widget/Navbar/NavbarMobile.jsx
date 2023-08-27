@@ -34,9 +34,15 @@ const NavbarMobile = () => {
               onClick={() => handleItemClick(index)}
             >
               <a
-                href={item.text === 'CryptoExtension' ? 'https://cryptoextension.fr/' : '#'}
+                href={
+                  item.text === 'CryptoExtension'
+                    ? 'https://cryptoextension.fr/'
+                    : '#'
+                }
                 target={item.text === 'CryptoExtension' ? '_blank' : ''}
-                rel={item.text === 'CryptoExtension' ? 'noopener noreferrer' : ''}
+                rel={
+                  item.text === 'CryptoExtension' ? 'noopener noreferrer' : ''
+                }
               >
                 <span className="icon">
                   <FontAwesomeIcon icon={item.icon} />
