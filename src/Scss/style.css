@@ -41,7 +41,7 @@ a {
   .navbar-container .lang {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 0;
     margin-right: 15px; }
     .navbar-container .lang .lang-button {
       background-color: transparent;
@@ -168,7 +168,7 @@ a {
     .navbar-container .lang {
       display: flex;
       align-items: center;
-      margin-top: 5px;
+      margin-top: 0;
       margin-right: 15px; }
       .navbar-container .lang .lang-button {
         background-color: transparent;
