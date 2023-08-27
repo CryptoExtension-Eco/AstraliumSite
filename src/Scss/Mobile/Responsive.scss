@@ -4,7 +4,7 @@
 @media screen and (min-width: $mobile-small) {
     @import "../Pages/Widget/Navbar/NavbarMobile.scss";
     .home {
-        height: 50vh;
+        height: 90vh;
         background-color: #4635DC;
         display: flex;
         flex-direction: column;
@@ -12,6 +12,8 @@
         align-items: center;
       
         .right {
+          position: relative;
+          top: -75px;
           display: flex;
           flex-direction: column; /* Afficher le contenu en colonne */
           justify-content: center;
@@ -31,10 +33,14 @@
             justify-content: center;
           img {
             max-width: 50%;
-            margin-top: 20px; /* Ajoutez une marge au-dessus de l'image */
+            margin-top: -50px;
           }
         }
       } 
+
+      .About, .Contact{
+        height: 100vh;
+      }
 }
 
 
