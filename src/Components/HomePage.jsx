@@ -6,12 +6,11 @@ import TextImg from './img/TextImg3.png';
 import { translate } from './TranslateService';
 
 const HomePage = ({ language }) => {
-
   return (
     <>
       <div className="home">
         <div className="right">
-        <p>{translate('pageTitle', language)}</p>
+          <p>{translate('pageTitle', language)}</p>
         </div>
         <div className="left">
           <img src={TextImg} alt="" />
