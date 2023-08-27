@@ -18,28 +18,36 @@ const NavbarMobile = () => {
   ];
 
   return (
-    <div className="navigation">
-      <ul>
-        {navigationItems.map((item, index) => (
-          <li
-            key={index}
-            className={`list ${index === activeIndex ? 'active' : ''}`}
-            onClick={() => handleItemClick(index)}
-          >
-            <a
-              href={item.text === 'CryptoExtension' ? 'https://cryptoextension.fr/' : '#'}
-              target={item.text === 'CryptoExtension' ? '_blank' : ''}
-              rel={item.text === 'CryptoExtension' ? 'noopener noreferrer' : ''}
+    <div className="navbar-container">
+      <h1 className="logo">Astralium</h1>
+      <div className="lang">
+        <button className="lang-button">FR</button>
+        <span className="lang-divider">|</span>
+        <button className="lang-button">EN</button>
+      </div>
+      <div className="navigation">
+        <ul>
+          {navigationItems.map((item, index) => (
+            <li
+              key={index}
+              className={`list ${index === activeIndex ? 'active' : ''}`}
+              onClick={() => handleItemClick(index)}
             >
-              <span className="icon">
-                <FontAwesomeIcon icon={item.icon} />
-              </span>
-              <span className="text">{item.text}</span>
-            </a>
-          </li>
-        ))}
-        <div className="indicator"></div>
-      </ul>
+              <a
+                href={item.text === 'CryptoExtension' ? 'https://cryptoextension.fr/' : '#'}
+                target={item.text === 'CryptoExtension' ? '_blank' : ''}
+                rel={item.text === 'CryptoExtension' ? 'noopener noreferrer' : ''}
+              >
+                <span className="icon">
+                  <FontAwesomeIcon icon={item.icon} />
+                </span>
+                <span className="text">{item.text}</span>
+              </a>
+            </li>
+          ))}
+          <div className="indicator"></div>
+        </ul>
+      </div>
     </div>
   );
 };
