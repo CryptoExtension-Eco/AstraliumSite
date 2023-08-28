@@ -17,10 +17,11 @@ const Contact = ({ language }) => {
         </div>
         <div className="email">
           <label htmlFor="email">{translate('emailLabel', language)}</label>
-          <input 
+          <input
             type="email"
             name="email"
-            placeholder={translate('emailPlaceholder', language)} />
+            placeholder={translate('emailPlaceholder', language)}
+          />
         </div>
         <div className="message">
           <label htmlFor="message">{translate('messageLabel', language)}</label>
@@ -32,7 +33,7 @@ const Contact = ({ language }) => {
             placeholder={translate('messagePlaceholder', language)}
           ></textarea>
         </div>
-        <button type='submit'>{translate('submitButton', language)}</button>
+        <button type="submit">{translate('submitButton', language)}</button>
       </form>
     </div>
   );
