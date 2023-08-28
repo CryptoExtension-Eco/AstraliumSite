@@ -328,8 +328,48 @@ a {
           .About .card .list ul li {
             margin: 15px; }
 
-  .Contact {
-    height: 100vh; } }
+  .Contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; }
+    .Contact form .name,
+    .Contact form .email,
+    .Contact form .message {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px; }
+      .Contact form .name label,
+      .Contact form .email label,
+      .Contact form .message label {
+        font-weight: bold;
+        color: white; }
+      .Contact form .name input,
+      .Contact form .name textarea,
+      .Contact form .email input,
+      .Contact form .email textarea,
+      .Contact form .message input,
+      .Contact form .message textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 300px; }
+      .Contact form .name textarea,
+      .Contact form .email textarea,
+      .Contact form .message textarea {
+        resize: vertical; }
+    .Contact form button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-left: -195px;
+      border-radius: 5px;
+      padding: 15px 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease; }
+      .Contact form button:hover {
+        background-color: #0056b3; } }
 @media screen and (min-width: 480px) {
   .paintauchoco {
     color: blue; }

@@ -3,9 +3,14 @@
   "about": "À propos",
   "contact": "Contact",
   "cryptoExtension": "CryptoExtension",
-  "pageTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Hendrerit dolor magna eget est lorem ipsum dolor. Tincidunt arcu non sodales neque sodales.e",
-  "first": "test 1",
+  "pageTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Hendrerit dolor magna eget est lorem ipsum dolor. Tincidunt arcu non sodales neque sodales.e",  "first": "test 1",
   "second": "test 1",
-  "tird": "test 1"
-
+  "third": "test 1",
+  "nameLabel": "Nom :",
+  "emailLabel": "Email :",
+  "messageLabel": "Message :",
+  "namePlaceholder": "Entrez votre Nom et Prenom",
+  "emailPlaceholder": "Entrez votre email",
+  "messagePlaceholder": "Entrez votre message",
+  "submitButton": "Envoyé"
 }
