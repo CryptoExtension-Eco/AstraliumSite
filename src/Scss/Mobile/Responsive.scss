@@ -1,139 +1,29 @@
 @import '../Base/Variables.scss';
 @import '../Base/Mixins.scss';
 
-@media screen and (min-width: $mobile-small) {
-    @import "../Pages/Widget/Navbar/NavbarMobile.scss";
-    .home {
-        height: 90vh;
-        background-color: $SecondColor;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-        .right {
-          position: relative;
-          top: -75px;
-          display: flex;
-          flex-direction: column; /* Afficher le contenu en colonne */
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          margin: 15px;
-          width: 90%;
-          color: white;
-      
-          p {
-            font-size: 20px;
-          }
-        }
-      
-        .left {
-            display: flex;
-            justify-content: center;
-          img {
-            max-width: 50%;
-            margin-top: -50px;
-          }
-        }
-      } 
-      .About {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .card {
-          
-          background-color: white;
-          width: 250px;
-          height: 300px;
-          border-radius: 19px;
-          box-shadow: 0 3px 6px rgb(30, 30, 30);
-    
-          .title{
-            margin: 10px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: underline;
-            font-size: 25px;
-          }
-          .list{
-            margin-left: 25px;
-            ul{
-                list-style-type: circle;
-                li{
-                    margin: 15px;
-                }
-            }
-          }
-        }
+@media screen and (min-width: $mobile-small){
+  .home{
+    .right{
+      p{
+        font-size: 20px;
       }
-      
-      .Contact {
-        h1{
-          display: flex;
-          justify-content: center;
-          position: relative;
-          top: 35px;
-          color: white;
-        }
-        form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 50px;
-      
-          .name,
-          .email,
-          .message {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-      
-            label {
-              font-weight: bold;
-              color: white;
-            }
-      
-            input,
-            textarea {
-              padding: 10px;
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              width: 300px;
-            }
-      
-            textarea {
-              resize: vertical;
-            }
-          }
-      
-          button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            margin-left: -195px;
-            border-radius: 5px;
-            padding: 15px 30px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-      
-            &:hover {
-              background-color: #0056b3;
-            }
-          }
-        }
-      }
-      
+    }
+  }
 }
 
+@media screen and (width: 716px) {
+  .About{
+    margin-left: 65px;
+  }
+}
 
 @media screen and (min-width: $mobile-medium) {
-    .paintauchoco{
-        color: blue;
+    .home{
+      .right{
+        p{
+          font-size: 20px;
+        }
+      }
     }
     .About{
       display: grid;
@@ -165,6 +55,7 @@
       display: flex;
       justify-content: space-between; /* Espacement entre .right et .left */
       align-items: center;
+      font-size: 150px;
   
       .right {
         flex: 1;
@@ -172,9 +63,11 @@
         flex-direction: column;
         align-items: flex-start;
         p {
+          margin-right: 250px;
+          margin-top: 150px;
           font-size: 25px;
           text-align: start;
-          width: 60%; /* Utilisez la largeur complète du .right */
+          width: 60%;
         }
       }
   
@@ -185,7 +78,7 @@
         align-items: flex-end; /* Aligner le contenu à droite */
         margin-top: -650px;
         img {
-          max-width: 30%; /* Utilisez la largeur complète du .left */
+          width: 30%; /* Utilisez la largeur complète du .left */
           margin-left: 20px;
         }
       }
@@ -220,7 +113,22 @@
 }
 
 @media screen and (min-width: $desktop-large) {
-    .paintauchoco{
-        color: aqua;
+    .home{
+      .right{
+        p{
+          margin-right: 650px;
+          font-size: 30px;
+          color: red;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .left{
+        img{
+          margin-bottom: 150px;
+          margin-left: 350px;
+          width: 30%;
+        }
+      }
     }
 }
