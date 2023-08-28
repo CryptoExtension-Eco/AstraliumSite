@@ -139,6 +139,25 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+    .Contact {
+      form {
+        .name,
+        .email,
+        .message {
+  
+          input,
+          textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 450px;
+          }
+        }
+        button {
+          margin-left: -345px;
+        }
+      }
+    }
 }
 
 @media screen and (min-width: $mobile-large) {

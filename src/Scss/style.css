@@ -380,7 +380,20 @@ a {
 
   .About {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .Contact form .name input,
+  .Contact form .name textarea,
+  .Contact form .email input,
+  .Contact form .email textarea,
+  .Contact form .message input,
+  .Contact form .message textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 450px; }
+  .Contact form button {
+    margin-left: -345px; } }
 @media screen and (min-width: 768px) {
   .home {
     display: flex;
