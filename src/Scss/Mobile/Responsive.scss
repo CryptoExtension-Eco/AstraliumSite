@@ -3,10 +3,14 @@
 
 @media screen and (min-width: $mobile-small){
   .home{
+    .hidden-mobile{
+      display: none;
+    }
     .right{
       p{
         font-size: 20px;
       }
+
     }
   }
 }
@@ -19,6 +23,7 @@
 
 @media screen and (min-width: $mobile-medium) {
     .home{
+
       .right{
         p{
           font-size: 20px;
@@ -56,6 +61,7 @@
       justify-content: space-between; /* Espacement entre .right et .left */
       align-items: center;
       font-size: 150px;
+      
   
       .right {
         flex: 1;
@@ -114,20 +120,33 @@
 
 @media screen and (min-width: $desktop-large) {
     .home{
+      .hidden-mobile{
+        position: relative;
+        top: 50px;
+        display: initial;
+        font-size: 55px;
+        width: 90%;
+        text-align: center;
+        color: white;
+      }
       .right{
         p{
-          margin-right: 650px;
-          font-size: 30px;
-          color: red;
-          width: 50%;
+          position: relative;
+          top: 150px;
+          left: -350px;
+          font-size: 35px;
+          width: 40%;
           text-align: center;
         }
       }
       .left{
+        display: flex;
+        flex-direction: row;
         img{
-          margin-bottom: 150px;
-          margin-left: 350px;
-          width: 30%;
+          position: relative;
+          top: -350px;
+          left: 600px;
+          width: 70%;
         }
       }
     }

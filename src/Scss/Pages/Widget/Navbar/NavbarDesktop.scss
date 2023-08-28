@@ -1,0 +1,86 @@
+@import "../../../Base/Variables.scss";
+@import "../../../Base/Mixins.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  z-index: 10;
+
+  &__logo {
+    position: relative;
+    font-size: 3.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+      color: $FirstColor;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    li {
+      list-style: none;
+      margin: 0px 25px;
+
+      & .header__navigation-link {
+        @include Flex();
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        transition: 0.3s;
+
+        &:hover {
+          color: $FirstColor;
+        }
+      }
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+
+    &-link {
+      @include Flex();
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px;
+      font-size: 1.8em;
+      letter-spacing: 1px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $FirstColor;
+      }
+    }
+
+    &-content {
+      position: absolute;
+      border: 2px solid white;
+      color: black; // Texte en noir pour le menu déroulant
+      display: none;
+      padding: 10px 15px;
+      z-index: 1;
+    }
+
+    &:hover .header__dropdown-content {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}

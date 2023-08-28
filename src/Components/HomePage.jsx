@@ -2,7 +2,9 @@ import React from 'react';
 import '../Scss/Pages/HomePages.scss';
 import PropTypes from 'prop-types';
 
-import TextImg from './img/TextImg3.png';
+import CryptoAstra from './img/CryptoXAstra.png';
+// import TextImg from './img/TextImg3.png';
+// import CryptoExt from './img/CryptoExtension.png';
 import { translate } from './TranslateService';
 
 const HomePage = ({ language }) => {
@@ -13,7 +15,10 @@ const HomePage = ({ language }) => {
           <p>{translate('pageTitle', language)}</p>
         </div>
         <div className="left">
-          <img src={TextImg} alt="" />
+          <img src={CryptoAstra} alt="" />
+          {/* <img src={TextImg} alt="" />
+          <p>X</p>
+          <img src={CryptoExt} alt="" /> */}
         </div>
       </div>
     </>
