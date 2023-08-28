@@ -313,7 +313,8 @@ a {
       background-color: white;
       width: 250px;
       height: 300px;
-      border-radius: 19px; }
+      border-radius: 19px;
+      box-shadow: 0 3px 6px #1e1e1e; }
       .About .card .title {
         margin: 10px;
         font-weight: bold;
