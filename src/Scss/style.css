@@ -304,11 +304,9 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
-    margin-left: 55px;
-    justify-content: center;
-    /* Centrer horizontalement */
+    display: flex;
     align-items: center;
-    /* Centrer verticalement */ }
+    flex-direction: column; }
     .About .card {
       background-color: white;
       width: 250px;
@@ -413,7 +411,10 @@ a {
 
   .About {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-direction: row; } }
 @media screen and (min-width: 1024px) {
   .paintauchoco {
     color: green; } }
