@@ -72,6 +72,13 @@
       }
       
       .Contact {
+        h1{
+          display: flex;
+          justify-content: center;
+          position: relative;
+          top: 35px;
+          color: white;
+        }
         form {
           display: flex;
           flex-direction: column;

@@ -6,6 +6,7 @@ import { translate } from '../TranslateService'; // Importer la fonction transla
 const Contact = ({ language }) => {
   return (
     <div className="Contact">
+      <h1>{translate('titleContact', language)}</h1>
       <form action="">
         <div className="name">
           <label htmlFor="name">{translate('nameLabel', language)}</label>

@@ -328,6 +328,12 @@ a {
           .About .card .list ul li {
             margin: 15px; }
 
+  .Contact h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+    color: white; }
   .Contact form {
     display: flex;
     flex-direction: column;
