@@ -16,7 +16,6 @@ const HomePagesMobile = ({ language }) => {
         <div className="left">
           {/* <img src={CryptoAstra} alt="" /> */}
           <img src={TextImg} alt="" />
-      
         </div>
       </div>
     </>

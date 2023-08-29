@@ -22,7 +22,10 @@ const HomePages = ({ language, onLanguageChange }) => {
   return (
     <div className="home">
       {isMobile ? (
-        <HomePagesMobile  language={language} onLanguageChange={onLanguageChange}/>
+        <HomePagesMobile
+          language={language}
+          onLanguageChange={onLanguageChange}
+        />
       ) : (
         <HomePagesDesktop />
       )}
