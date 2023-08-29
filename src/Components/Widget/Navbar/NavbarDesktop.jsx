@@ -16,17 +16,17 @@ const NavbarDesktop = () => {
           <ul className={`header__navigation ${isMenuOpen ? 'header__navigation--open' : ''}`}>
             <li className="header__navigation-item">
             <a href='#' className="header__navigation-link">
-                Login
+              home
               </a>
             </li>
             <li className="header__navigation-item">
             <a href='#' className="header__navigation-link">
-                Login
+              about
               </a>
             </li>
             <li className="header__navigation-item">
               <a href='#' className="header__navigation-link">
-                Login
+              contact
               </a>
             </li>
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import '../Scss/Pages/HomePages.scss';
+import '../../Scss/Pages/HomePages.scss';
 import PropTypes from 'prop-types';
 
 // import CryptoAstra from './img/CryptoXAstra.png';
-import TextImg from './img/TextImg3.png';
-import { translate } from './TranslateService';
+import TextImg from '../img/TextImg3.png';
+import { translate } from '../TranslateService';
 
-const HomePage = ({ language }) => {
+const HomePagesMobile = ({ language }) => {
   return (
     <>
       <div className="home">
@@ -23,8 +23,8 @@ const HomePage = ({ language }) => {
   );
 };
 
-HomePage.propTypes = {
+HomePagesMobile.propTypes = {
   language: PropTypes.string.isRequired,
 };
 
-export default HomePage;
+export default HomePagesMobile;
