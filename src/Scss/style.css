@@ -44,7 +44,7 @@ a {
     display: flex;
     justify-content: center; }
     .home .left img {
-      max-width: 80%;
+      width: 40%;
       margin-top: -50px; }
 
 /*Color*/
