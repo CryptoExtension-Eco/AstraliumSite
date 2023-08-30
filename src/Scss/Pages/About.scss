@@ -2,35 +2,34 @@
 @import '../Base/Mixins.scss';
 
 .About {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .card {
-      
-      background-color: white;
-      width: 250px;
-      height: 300px;
-      border-radius: 19px;
-      box-shadow: 0 3px 6px rgb(30, 30, 30);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .card {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 19px;
+    box-shadow: 0 3px 6px rgb(30, 30, 30);
 
-      .title{
-        margin: 10px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: underline;
-        font-size: 25px;
-      }
-      .list{
-        margin-left: 25px;
-        ul{
-            list-style-type: circle;
-            li{
-                margin: 15px;
-            }
+    .title {
+      margin: 10px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 25px;
+    }
+    .list {
+      margin-left: 25px;
+      ul {
+        list-style-type: circle;
+        li {
+          margin: 15px;
         }
       }
     }
   }
+}

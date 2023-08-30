@@ -1,65 +1,65 @@
-@import "../../Base/Variables.scss";
-.HomeDesktop{
-    margin-top: 400px;
-    color: white;
-    .content{
-        font-size: 35px;
-        margin-left: 150px;
-        a{
-            span {
-                position: relative;
-                top: -20px;
-                display: inline-block;
-                border-radius: 9999px;
-                background-color: rgba(90, 111, 213, 0.874);
-                padding: 0.25rem 0.75rem;
-                font-size: 0.875rem;
-                font-weight: 600;
-                line-height: 1.5;
-                color: black;
-                border: 1px solid rgba(128, 90, 213, 0.2);
-                border-style: inset;
-                border-width: 1px;
-                transition: 0.3s;
-                
-                &:hover {
-                  background-color: rgba(128, 90, 213, 0.2);
-                  color: black;
-                }
-              }
-        }
-          
-        p{
-            width: 40%;
-        }
-        .a {
-            position: relative;
-            top: 50px;
-            right: 15px;
-            margin: 10px;
-            color: white;
-            font-size: 25px;
-            padding: 15px;
-            background-color: rgb(13, 13, 108);
-            color: white;
-            border-radius: 15px;
-            transition: 0.3s;
-            
-            &:hover {
-              transform: scale(1.1); /* Fait grossir le bouton */
-              background-color: white;
-              color: black;
-            }
-          }  
-    }
-    .img{
-      float: right;
-      width: 40%;
-      img{
+@import '../../Base/Variables.scss';
+.HomeDesktop {
+  margin-top: 400px;
+  color: white;
+  .content {
+    font-size: 35px;
+    margin-left: 150px;
+    a {
+      span {
         position: relative;
-        top: -350px;
-        left: 150px;
-        width: 50%;
+        top: -20px;
+        display: inline-block;
+        border-radius: 9999px;
+        background-color: rgba(90, 111, 213, 0.874);
+        padding: 0.25rem 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: black;
+        border: 1px solid rgba(128, 90, 213, 0.2);
+        border-style: inset;
+        border-width: 1px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(128, 90, 213, 0.2);
+          color: black;
+        }
       }
     }
+
+    p {
+      width: 40%;
+    }
+    .a {
+      position: relative;
+      top: 50px;
+      right: 15px;
+      margin: 10px;
+      color: white;
+      font-size: 25px;
+      padding: 15px;
+      background-color: rgb(13, 13, 108);
+      color: white;
+      border-radius: 15px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1); /* Fait grossir le bouton */
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  .img {
+    float: right;
+    width: 40%;
+    img {
+      position: relative;
+      top: -350px;
+      left: 150px;
+      width: 50%;
+    }
+  }
 }

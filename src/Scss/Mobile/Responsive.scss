@@ -1,123 +1,117 @@
 @import '../Base/Variables.scss';
 @import '../Base/Mixins.scss';
 
-@media screen and (min-width: $mobile-small){
-  .home{
-    .hidden-mobile{
+@media screen and (min-width: $mobile-small) {
+  .home {
+    .hidden-mobile {
       display: none;
     }
-    .right{
-      p{
+    .right {
+      p {
         font-size: 20px;
       }
-
     }
   }
 }
 
 @media screen and (width: 716px) {
-  .About{
+  .About {
     margin-left: 65px;
   }
 }
 
 @media screen and (min-width: $mobile-medium) {
-    .home{
-
-      .right{
-        p{
-          font-size: 20px;
-        }
+  .home {
+    .right {
+      p {
+        font-size: 20px;
       }
     }
-    .About{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .Contact {
-      form {
-        .name,
-        .email,
-        .message {
-  
-          input,
-          textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 450px;
-          }
-        }
-        button {
-          margin-left: -345px;
+  }
+  .About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Contact {
+    form {
+      .name,
+      .email,
+      .message {
+        input,
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 450px;
         }
       }
+      button {
+        margin-left: -345px;
+      }
     }
+  }
 }
 
 @media screen and (min-width: $mobile-large) {
-    .home {
+  .home {
+    display: flex;
+    justify-content: space-between; /* Espacement entre .right et .left */
+    align-items: center;
+    font-size: 150px;
+
+    .right {
+      flex: 1;
       display: flex;
-      justify-content: space-between; /* Espacement entre .right et .left */
-      align-items: center;
-      font-size: 150px;
-      
-  
-      .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        p {
-          margin-right: 250px;
-          margin-top: 150px;
-          font-size: 25px;
-          text-align: start;
-          width: 60%;
-        }
-      }
-  
-      .left {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* Aligner le contenu à droite */
-        margin-top: -650px;
-        img {
-          width: 30%; /* Utilisez la largeur complète du .left */
-          margin-left: 20px;
-        }
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin-right: 250px;
+        margin-top: 150px;
+        font-size: 25px;
+        text-align: start;
+        width: 60%;
       }
     }
 
-    .About{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .left {
+      flex: 1;
       display: flex;
-      justify-content: center;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: flex-end; /* Aligner le contenu à droite */
+      margin-top: -650px;
+      img {
+        width: 30%; /* Utilisez la largeur complète du .left */
+        margin-left: 20px;
+      }
     }
   }
-  
+
+  .About {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
 
 @media screen and (min-width: $tablet) {
-    .paintauchoco{
-        color: green;
-    }
+  .paintauchoco {
+    color: green;
+  }
 }
 
 @media screen and (min-width: $desktop-small) {
-    .paintauchoco{
-        color: burlywood;
-    }
+  .paintauchoco {
+    color: burlywood;
+  }
 }
 
 @media screen and (min-width: $desktop-medium) {
-    .paintauchoco{
-        color: tomato;
-    }
+  .paintauchoco {
+    color: tomato;
+  }
 }
 
 @media screen and (min-width: $desktop-large) {
-
 }
