@@ -6,7 +6,13 @@ const HomePagesDesktop = () => {
     <>
       <div className="HomeDesktop">
         <div className="content">
-        <a href="https://chrome.google.com/webstore/detail/cryptoextension/fobclgcmkebeadojpnjgkphdgmagfbee?hl=fr" target="_blank" rel="noopener noreferrer"><span className="littleB">L&#39;extension </span></a>
+          <a
+            href="https://chrome.google.com/webstore/detail/cryptoextension/fobclgcmkebeadojpnjgkphdgmagfbee?hl=fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="littleB">L&#39;extension </span>
+          </a>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
             doloribus quos nesciunt aperiam nemo, laudantium odio fugit at alias
@@ -14,7 +20,7 @@ const HomePagesDesktop = () => {
             architecto iste.
           </p>
           <a
-            className='a'
+            className="a"
             href="https://cryptoextension.fr"
             target="_blank"
             rel="noopener noreferrer"
@@ -22,7 +28,7 @@ const HomePagesDesktop = () => {
             CryptoExtension
           </a>
           <a
-            className='a'
+            className="a"
             href="https://cryptoextension.fr"
             target="_blank"
             rel="noopener noreferrer"
