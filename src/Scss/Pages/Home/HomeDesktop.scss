@@ -1,6 +1,6 @@
 @import "../../Base/Variables.scss";
 .HomeDesktop{
-    margin-top: -200px;
+    margin-top: 400px;
     color: white;
     .content{
         font-size: 35px;
@@ -50,8 +50,16 @@
               background-color: white;
               color: black;
             }
-          }
-          
+          }  
     }
-
+    .img{
+      float: right;
+      width: 40%;
+      img{
+        position: relative;
+        top: -350px;
+        left: 150px;
+        width: 50%;
+      }
+    }
 }

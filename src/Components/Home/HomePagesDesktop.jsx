@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Scss/Pages/Home/HomeDesktop.scss';
-// import Logo from '../img/TextImg2.png';
+import Logo from '../img/TextImg2.png';
 const HomePagesDesktop = () => {
   return (
     <>
@@ -36,9 +36,9 @@ const HomePagesDesktop = () => {
             Contactez Moi
           </a>
         </div>
-        {/* <div className="img">
+        <div className="img">
           <img src={Logo} alt="" />
-        </div> */}
+        </div>
       </div>
     </>
   );
