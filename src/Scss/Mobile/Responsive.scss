@@ -119,35 +119,5 @@
 }
 
 @media screen and (min-width: $desktop-large) {
-    .home{
-      .hidden-mobile{
-        position: relative;
-        top: 50px;
-        display: initial;
-        font-size: 55px;
-        width: 90%;
-        text-align: center;
-        color: white;
-      }
-      .right{
-        p{
-          position: relative;
-          top: 150px;
-          left: -350px;
-          font-size: 35px;
-          width: 40%;
-          text-align: center;
-        }
-      }
-      .left{
-        display: flex;
-        flex-direction: row;
-        img{
-          position: relative;
-          top: -350px;
-          left: 600px;
-          width: 70%;
-        }
-      }
-    }
+
 }
