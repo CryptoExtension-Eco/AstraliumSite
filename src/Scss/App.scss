@@ -3,6 +3,9 @@
 @import './Base//Variables.scss';
 @import './Base//Mixins.scss';
 
+/*Loader*/
+@import './Pages/Loader/Loader.scss';
+
 /*Pages*/
 @import './Pages/HomePages.scss';
 @import './Pages/About.scss';

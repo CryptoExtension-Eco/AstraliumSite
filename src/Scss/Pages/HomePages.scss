@@ -1,34 +1,30 @@
-@import "../Base/Variables.scss";
+@import '../Base/Variables.scss';
 .home {
-    height: 90vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .right {
+    position: relative;
+    top: -75px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Afficher le contenu en colonne */
     justify-content: center;
     align-items: center;
-  
-    .right {
-      position: relative;
-      top: -75px;
-      display: flex;
-      flex-direction: column; /* Afficher le contenu en colonne */
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 15px;
-      width: 90%;
-      color: white;
-    }
-  
-    .left {
-        display: flex;
-        justify-content: center;
-      img {
-        width: 40%;
-        margin-top: -50px;
-      }
-    }
-  } 
+    text-align: center;
+    margin: 15px;
+    width: 90%;
+    color: white;
+  }
 
-  
-  
-  
+  .left {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 40%;
+      margin-top: -50px;
+    }
+  }
+}
