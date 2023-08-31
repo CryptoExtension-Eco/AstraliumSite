@@ -14,7 +14,7 @@ function App() {
     // Une fois le chargement terminé, mettez setContentLoaded(true);
     setTimeout(() => {
       setContentLoaded(true); // Par exemple, marquez le contenu comme chargé après 2 secondes
-    }, 2000);
+    }, 3000);
   }, []);
 
   const handleLanguageChange = (newLanguage) => {
