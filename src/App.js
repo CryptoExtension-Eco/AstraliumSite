@@ -10,10 +10,9 @@ function App() {
   const [contentLoaded, setContentLoaded] = useState(false); // État pour suivre le chargement du contenu
 
   useEffect(() => {
-    // Ici, vous pouvez simuler un délai de chargement ou vérifier le chargement de données, etc.
-    // Une fois le chargement terminé, mettez setContentLoaded(true);
+
     setTimeout(() => {
-      setContentLoaded(true); // Par exemple, marquez le contenu comme chargé après 2 secondes
+      setContentLoaded(true);
     }, 3000);
   }, []);
 
@@ -23,7 +22,7 @@ function App() {
 
   return (
     <>
-      {contentLoaded ? ( // Afficher le contenu seulement lorsque le chargement est terminé
+      {contentLoaded ? ( 
         <>
           <Navbar language={language} onLanguageChange={handleLanguageChange} />
           <Home language={language} onLanguageChange={handleLanguageChange} />
