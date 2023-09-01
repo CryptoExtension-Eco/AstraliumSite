@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Loader = () => {
-  const text = 'Astralium'; // Texte de l'en-tête h1
+  const text = 'Astralium...'; // Texte de l'en-tête h1
   const colors = ['#BA55D3', '#FF00FF', '#9370DB']; // Couleurs pour chaque lettre
   const letters = text.split(''); // Divisez le texte en lettres individuelles
 

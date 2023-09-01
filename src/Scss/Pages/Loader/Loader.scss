@@ -57,8 +57,8 @@ h1 {
 .letter {
   display: inline-block;
   transition:
-  color 0.3s,
-  transform 0.3s;
+    color 0.3s,
+    transform 0.3s;
   transform: scale(2);
 }
 @-webkit-keyframes spin {

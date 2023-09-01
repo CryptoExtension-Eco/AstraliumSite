@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// add le systeme de traduction comme dans NavBarMobile
 const NavbarDesktop = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
