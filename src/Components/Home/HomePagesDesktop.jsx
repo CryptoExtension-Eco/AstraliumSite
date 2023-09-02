@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Scss/Pages/Home/HomeDesktop.scss';
-import Logo from '../img/TextImg3.png';
+import Logo from '../img/TextImg2.png';
 const HomePagesDesktop = () => {
   return (
     <>
