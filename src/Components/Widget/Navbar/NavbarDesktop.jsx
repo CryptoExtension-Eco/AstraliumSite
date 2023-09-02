@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from '../../TranslateService'; // Assurez-vous d'importer correctement le service de traduction
+import { translate } from '../../TranslateService';
 
 const NavbarDesktop = ({ language, onLanguageChange }) => {
   return (
@@ -8,25 +8,21 @@ const NavbarDesktop = ({ language, onLanguageChange }) => {
       <nav className="header">
         <a href="#" className="header__logo">
           {translate('home', language)}{' '}
-          {/* Utilisez translate pour le texte du logo */}
         </a>
         <ul className="header__navigation">
           <li className="header__navigation-item">
             <a href="#" className="header__navigation-link">
               {translate('home', language)}{' '}
-              {/* Utilisez translate pour le texte du lien "home" */}
             </a>
           </li>
           <li className="header__navigation-item">
             <a href="#" className="header__navigation-link">
               {translate('about', language)}{' '}
-              {/* Utilisez translate pour le texte du lien "about" */}
             </a>
           </li>
           <li className="header__navigation-item">
             <a href="#" className="header__navigation-link">
               {translate('contact', language)}{' '}
-              {/* Utilisez translate pour le texte du lien "contact" */}
             </a>
           </li>
         </ul>
