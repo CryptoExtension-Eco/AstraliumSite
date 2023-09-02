@@ -25,7 +25,10 @@ const Navbar = ({ language, onLanguageChange }) => {
       {isMobile ? (
         <NavbarMobile language={language} onLanguageChange={onLanguageChange} />
       ) : (
-        <NavbarDesktop />
+        <NavbarDesktop
+          language={language}
+          onLanguageChange={onLanguageChange}
+        />
       )}
     </div>
   );

@@ -10,7 +10,6 @@ function App() {
   const [contentLoaded, setContentLoaded] = useState(false); // État pour suivre le chargement du contenu
 
   useEffect(() => {
-
     setTimeout(() => {
       setContentLoaded(true);
     }, 3000);
@@ -22,7 +21,7 @@ function App() {
 
   return (
     <>
-      {contentLoaded ? ( 
+      {contentLoaded ? (
         <>
           <Navbar language={language} onLanguageChange={handleLanguageChange} />
           <Home language={language} onLanguageChange={handleLanguageChange} />
