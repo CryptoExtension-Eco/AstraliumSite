@@ -1,7 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { translate } from '../TranslateService';
+
 import '../../Scss/Pages/Home/HomeDesktop.scss';
 import Logo from '../img/TextImg2.png';
-const HomePagesDesktop = () => {
+
+
+const HomePagesDesktop = ({ language }) => {
   return (
     <>
       <div className="HomeDesktop">
@@ -13,19 +18,15 @@ const HomePagesDesktop = () => {
           >
             <span className="littleB">L&#39;extension </span>
           </a>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-            doloribus quos nesciunt aperiam nemo, laudantium odio fugit at alias
-            tempore commodi ea. Quod suscipit illo dolor autem adipisci
-            architecto iste.
-          </p>
+          <p className='textDesktop'>{translate('pageTitle', language)}</p>
+
           <a
             className="a"
             href="https://cryptoextension.fr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            CryptoExtension
+            {translate('cryptoExtension', language)}
           </a>
           <a
             className="a"
@@ -33,7 +34,7 @@ const HomePagesDesktop = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Contactez Moi
+            {translate('titleContact', language)}
           </a>
         </div>
         <div className="img">
@@ -42,6 +43,10 @@ const HomePagesDesktop = () => {
       </div>
     </>
   );
+};
+
+HomePagesDesktop.propTypes = {
+  language: PropTypes.string.isRequired,
 };
 
 export default HomePagesDesktop;
