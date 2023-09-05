@@ -21,16 +21,9 @@ const About = ({ language, onLanguageChange }) => {
   return (
     <div className="home">
       {isMobile ? (
-        <AboutMobile
-          language={language}
-          onLanguageChange={onLanguageChange}
-        />
+        <AboutMobile language={language} onLanguageChange={onLanguageChange} />
       ) : (
-        <AboutDesktop 
-          language={language}
-          onLanguageChange={onLanguageChange}
-
-        />
+        <AboutDesktop language={language} onLanguageChange={onLanguageChange} />
       )}
     </div>
   );

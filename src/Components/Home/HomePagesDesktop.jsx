@@ -5,7 +5,6 @@ import { translate } from '../TranslateService';
 import '../../Scss/Pages/Home/HomeDesktop.scss';
 import Logo from '../img/TextImg2.png';
 
-
 const HomePagesDesktop = ({ language }) => {
   return (
     <>
@@ -18,7 +17,7 @@ const HomePagesDesktop = ({ language }) => {
           >
             <span className="littleB">L&#39;extension </span>
           </a>
-          <p className='textDesktop'>{translate('pageTitle', language)}</p>
+          <p className="textDesktop">{translate('pageTitle', language)}</p>
 
           <a
             className="a"

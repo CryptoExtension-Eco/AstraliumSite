@@ -27,10 +27,9 @@ const HomePages = ({ language, onLanguageChange }) => {
           onLanguageChange={onLanguageChange}
         />
       ) : (
-        <HomePagesDesktop 
+        <HomePagesDesktop
           language={language}
           onLanguageChange={onLanguageChange}
-
         />
       )}
     </div>
