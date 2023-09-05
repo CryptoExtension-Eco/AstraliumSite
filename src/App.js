@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Scss/App.scss';
 import PreLoader from './Components/Loader/Loader'; // Importez le composant PreLoader ici
 import { Home } from './Components';
-import { About, Contact } from './Components/Pages';
+import { Contact } from './Components/Pages';
+import { About } from './Components';
 import { Footer, Navbar } from './Components/Widget';
 
 function App() {

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from '../TranslateService';
-
+import { translate } from '../../TranslateService';
 const TechnologyCard = ({ title, items, language }) => {
   return (
     <div className="card">
@@ -25,7 +24,7 @@ TechnologyCard.propTypes = {
   language: PropTypes.string.isRequired,
 };
 
-const About = ({ language }) => {
+const AboutMobile = ({ language }) => {
   const technologies = [
     {
       title: 'CryptoExtension',
@@ -55,8 +54,8 @@ const About = ({ language }) => {
   );
 };
 
-About.propTypes = {
+AboutMobile.propTypes = {
   language: PropTypes.string.isRequired,
 };
 
-export default About;
+export default AboutMobile;
