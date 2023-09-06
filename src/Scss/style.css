@@ -153,8 +153,31 @@ h1 {
         .About .card .list ul li {
           margin: 15px; }
 
-.AboutDesktop p {
-  font-size: 250px; }
+.AboutDesktop {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 200px;
+  display: flex;
+  align-items: center; }
+  .AboutDesktop .card {
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    border-radius: 19px;
+    box-shadow: 0 3px 6px #1e1e1e; }
+    .AboutDesktop .card .title {
+      margin: 10px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 35px; }
+    .AboutDesktop .card .list {
+      margin-left: 30px;
+      font-size: 20px; }
+      .AboutDesktop .card .list ul {
+        list-style-type: circle; }
+        .AboutDesktop .card .list ul li {
+          margin: 55px; }
 
 .Contact h1 {
   display: flex;
